@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="register_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html"><img class="growtodya" src="assets/logo.png"></a>
+            <ul class="topmenu">
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="register.html">REGISTER</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container1">
+        <div class="form_container">
+            <h1>Please register first!!</h1>
+            <form name="form" method="post" action="index.html">
+                <label for="name">Name</label>
+                <input type="text" placeholder="Enter your name" name="name" id="name">
+                <p id="requiredName"></p>
+
+                <label for="email">Email</label>
+                <input type="email" placeholder="Enter your email" name="email" id="email">
+                <p id="requiredEmail"></p>
+                
+                <label for="password">Password</label>
+                <input type="password" placeholder="Enter your password" name="password" id="password">
+                <p id="requiredPass"></p>
+
+                <label for="gender">Gender</label>
+                <div class="gender">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+                </div>
+                <p id="requiredGender"></p>
+
+                <hr>
+
+                
+                <label class="term" for="termCheck"><input type="checkbox" name="term" id="term">By creating an account you agree to our <a href="#">Terms & Privacy</a></label>
+                <br>
+                <p id="requiredTerm"></p>
+
+                <input type="submit" name="Register" onclick="return validate()">
+
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <h2 class="title">For more information</h2>
+
+        <div class="sosmedLogo">
+            <a href="https://www.instagram.com/" target="blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/" target="blank"><i class="fab fa-twitter"></i></a>
+        </div>
+
+        <h2 class="copyright">&copy; 2021 GrowtoDYa. All Rights Reserved.</h2>
+        <h2 class="privacy">Legal | Privacy Policy</h2>
+    </footer>
+</body>
+</html>
